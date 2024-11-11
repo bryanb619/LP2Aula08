@@ -1,0 +1,97 @@
+//Extensions
+
+//Acrescentar metodos as classes só funcionam com coisas publicas da classe
+
+
+
+// sai no teste
+// "this" é como se fosse um método de extensão da classe, diz que estou a extender a classe
+
+public static class SkillLevelExtension
+{
+	public static bool NotWeak(this SkillLevel sl)
+	{
+		return sl != SkillLevel.Weak;
+	
+	}
+}
+
+// exemplo de acesso
+if(skill.NotWeak())
+{	
+	//...
+}
+
+
+// namespaces devem ser nome projeto.folder
+
+//-------------------------------------------------------------------------
+// Lambdas
+
+// func <1º valor é de entrada e 2º é de retorno>
+
+
+// lambda serve para simplificar, etc...
+
+//------------------------------------------------------------------------
+
+ex 2
+
+4: 
+5: F 0 ou mais
+6: V (variaveis capturadas) e lambdas chamam-se closure
+7: public int WordCount(string s)
+{	
+	return s.Spint().Leght();
+}
+
+8: public delegate InStringOutInt (string str);
+9: 
+
+
+Tratamento Nullable
+
+float? xNull;
+
+xNull.HasVaue? xNul.Value : 0f
+
+
+//
+string pageTitle = suppliedTittle ?? "Default Tittle"
+
+
+// se for null, passa a ser default tittle
+
+pageTile ?? = "Default Tittle"
+
+
+// pode ser util em eventos
+
+KeyPress?? new UnityEvent<char>();
+
+// ao inves dessa checagem
+if (keyPress == null) keyPress = new UnityEvent<char>();
+
+
+ex 3
+1: F
+2: Nullable<T> T?
+3: 
+4: HasValue, Value ( true quando nao é null)
+5: ??
+6: ?.
+7: ex: 
+
+?.xNul ?? 0; 
+
+ou Xnull ?? 0
+
+// ------------------------------------------------------------------------------
+
+LINQ 
+
+permite manipular IEnumerable<T>, ou seja, coleções
+
+
+
+
